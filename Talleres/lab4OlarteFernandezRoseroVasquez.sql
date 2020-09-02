@@ -41,9 +41,17 @@ fecha_movimiento date,
 foreign key (numero_cuenta) references Cuentas,
 primary key (numero));
              
-insert into cuentas values (100, 'A', 10, null, 0);
-insert into cuentas values (200, 'A', 10, null, 100);
-insert into cuentas values (300, 'C', 10, null, 500);
-insert into cuentas values (400, 'C', 10, null, 1000);
-insert into cuentas values (500, 'A', 10, null, 100);
-insert into cuentas values (600, 'A', 10, null, 50);
+             
+-- Tabla de titulares --
+insert into Titulares VALUES (1,100,60);
+insert into Titulares VALUES (1,200,40);
+insert into Titulares VALUES (2,100,40);
+insert into Titulares VALUES (2,200,60);
+insert into Titulares VALUES (3,300,100);
+insert into Titulares VALUES (4,400,100);
+insert into Titulares VALUES (5,500,100);
+insert into Titulares VALUES (6,600,100);        
+             
+             
+             
+             
