@@ -1,4 +1,4 @@
---Fabian Olarte / Santiago Fern·ndez / Mateo Rosero / AndrÈs V·squez 
+--Fabian Olarte / Santiago Fern√°ndez / Mateo Rosero / Andr√©s V√°squez 
 --Laboratorio SQL 4 2020-3 Bases de Datos
 
 create table Clientes(
@@ -40,3 +40,10 @@ valor number(10,2),
 fecha_movimiento date,
 foreign key (numero_cuenta) references Cuentas,
 primary key (numero));
+             
+insert into cuentas values (100, 'A', 10, null, 0);
+insert into cuentas values (200, 'A', 10, null, 100);
+insert into cuentas values (300, 'C', 10, null, 500);
+insert into cuentas values (400, 'C', 10, null, 1000);
+insert into cuentas values (500, 'A', 10, null, 100);
+insert into cuentas values (600, 'A', 10, null, 50);
